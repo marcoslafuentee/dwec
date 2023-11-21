@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+        if(typeof(Storage)!= 'undefined'){
+            alert('Navegador compatible con Storage');
+        }else {
+            alert('Navegador NO compatible con Storage');
+        }
+
+
+
+
+
+
+        console.log(Storage);
+
+        let listado = ['PHP', 'Python', 'Java', 'C#', 'JavaScript'];
+        localStorage.setItem("cursos", listado);
+
+
+        sessionStorage.setItem("cursos1", listado);
+
+
+        localStorage.canal = "Unacadenasinmas";
+        let lectura = localStorage.getItem("canal1");
+        console.log( lectura);
+
+        console.log(localStorage.cursos);
+
+
+        localStorage.setItem("cursos2", JSON.parse(localStorage.getItem("cursos2")));
+        console.log(curso2Almacenado)
+    </script>
+</body>
+</html>
